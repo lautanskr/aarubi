@@ -210,7 +210,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="active" href="index.html"><i class="sidebar-item-icon fa fa-bookmark"></i>
+                        <a class="active" href="{{route('admin_service.index')}}"><i class="sidebar-item-icon fa fa-bookmark"></i>
                             <span class="nav-label">Services</span>
                         </a>
                     </li>
