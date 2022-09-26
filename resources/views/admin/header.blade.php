@@ -11,6 +11,8 @@
     <link href="{{asset('assets/vendors/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" />
     <link href="{{asset('assets/vendors/themify-icons/css/themify-icons.css')}}" rel="stylesheet" />
     <!-- PLUGINS STYLES-->
+    <link href="{{asset('assets/vendors/DataTables/datatables.min.css')}}" rel="stylesheet" />
+
     <link href="{{asset('assets/vendors/jvectormap/jquery-jvectormap-2.0.3.css')}}" rel="stylesheet" />
     <!-- THEME STYLES-->
     <link href="{{asset('assets/css/main.min.css')}}" rel="stylesheet" />
@@ -23,7 +25,7 @@
         <header class="header">
             <div class="page-brand">
                 <a class="link" href="index.html">
-                    <span class="brand">Admin
+                    <span class="brand">Aarubi
                         <span class="brand-tip">CAST</span>
                     </span>
                     <span class="brand-mini">AC</span>
@@ -184,18 +186,18 @@
                         <img src="{{asset('assets/img/admin-avatar.png')}}" width="45px" />
                     </div>
                     <div class="admin-info">
-                        <div class="font-strong">James Brown</div><small>Administrator</small></div>
+                        <div class="font-strong">Aarubi</div><small>Administrator</small></div>
                 </div>
                 <ul class="side-menu metismenu">
                     <li>
-                        <a class="active" href="index.html"><i class="sidebar-item-icon fa fa-th-large"></i>
+                        <a class="active" href="{{route('dashboard.index')}}"><i class="sidebar-item-icon fa fa-th-large"></i>
                             <span class="nav-label">Dashboard</span>
                         </a>
                     </li>
                     
                     <li class="heading">FEATURES</li>
                     <li>
-                        <a class="active" href="index.html"><i class="sidebar-item-icon fa fa-bookmark"></i>
+                        <a class="active" href="{{route('admin_about.index')}}"><i class="sidebar-item-icon fa fa-bookmark"></i>
                             <span class="nav-label">About</span>
                         </a>
                     </li>
