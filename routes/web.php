@@ -1,18 +1,29 @@
 <?php
-
-
-use App\Http\Controllers\Admin\DashboardController;
-use App\Http\Controllers\Admin\AboutController;
-use App\Http\Controllers\Admin\ReviewController;
-use App\Http\Controllers\Admin\HomeController;
-use App\Http\Controllers\Admin\ClientMessageController;
 use Illuminate\Support\Facades\Route;
+
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\ServicesController;
+use App\Http\Controllers\Admin\HomeController;
+use App\Http\Controllers\Admin\AboutController;
+use App\Http\Controllers\Admin\ContactController;
+use App\Http\Controllers\Admin\ClientMessageController;
+use App\Http\Controllers\Admin\FrontendController;
+use App\Http\Controllers\FrontendController;
+
 
 Route::get('/', function () {
     return view('frontend/index');
 });
+//Frontend Controller
+Route::get('/',[FrontendController::class,'index'])->name('home');
+Route::get('/about',[FrontendController::class,'aboutus'])->name('about');
+Route::get('/services',[FrontendController::class,'services'])->name('service');
+Route::get('/products',[FrontendController::class,'products'])->name('product');
+Route::get('/contanct',[FrontendController::class,'contacts'])->name('contact');
+
+
+
 
 
 Route::get('/dashboard', function () {
@@ -22,6 +33,10 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 Route::resource('dashboard',DashboardController::class);
+Route::resource('admin_service',ServicesController::class);
+Route::resource('admin_product',ProductController::class);
+Route::resource('admin_contact',ContactController::class);
+
 Route::resource('admin_about',AboutController::class);
 Route::resource('admin_review',ReviewController::class);
 Route::resource('admin_home',HomeController::class);
