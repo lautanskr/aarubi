@@ -8,17 +8,12 @@ use App\Http\Controllers\Admin\ReviewController;
 use App\Http\Controllers\Admin\HomeController;
 
 
-use Illuminate\Support\Facades\Route;
 
 
-use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ServicesController;
-use App\Http\Controllers\Admin\HomeController;
-use App\Http\Controllers\Admin\AboutController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\ClientMessageController;
-use App\Http\Controllers\Admin\FrontendController;
 use App\Http\Controllers\FrontendController;
 
 
@@ -43,13 +38,11 @@ Route::get('/contanct',[FrontendController::class,'contacts'])->name('contact');
 
 
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+
 
 require __DIR__.'/auth.php';
 
-Route::resource('dashboard',DashboardController::class);
+
 Route::resource('admin_service',ServicesController::class);
 Route::resource('admin_product',ProductController::class);
 Route::resource('admin_contact',ContactController::class);

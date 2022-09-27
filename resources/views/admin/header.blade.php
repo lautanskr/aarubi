@@ -223,7 +223,7 @@
                         </a>
                     </li>
                     <li>
-<<<<<<< HEAD
+
                         <a class="active" href="{{route('admin_review.index')}}"><i class="sidebar-item-icon fa fa-bookmark"></i>
                             <span class="nav-label">Review</span>
                         </a>
@@ -231,15 +231,15 @@
                     <li>
                         <a class="active" href="{{route('logout')}}"><i class="sidebar-item-icon fa fa-bookmark"></i>
                             <span class="nav-label">Logout</span>
-=======
+
                         <a class="active" href="{{route('admin.client.message')}}"><i class="sidebar-item-icon fa fa-bookmark"></i>
                             <span class="nav-label">Client Message</span>
->>>>>>> 0629a395797409b335e3c77310078362ac0822d3
+
                         </a>
                     </li>
                    
                    
-<<<<<<< HEAD
+
                    
                     <li>
                         <a href="javascript:;"><i class="sidebar-item-icon fa fa-file-text"></i>
@@ -292,8 +292,8 @@
                             </li>
                         </ul>
                     </li>
-=======
->>>>>>> 0629a395797409b335e3c77310078362ac0822d3
+
+
                 </ul>
             </div>
         </nav>
