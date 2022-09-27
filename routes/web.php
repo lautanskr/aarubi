@@ -1,5 +1,10 @@
 <?php
 
+
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\AboutController;
+use App\Http\Controllers\Admin\ReviewController;
+use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\ClientMessageController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardController;
@@ -17,6 +22,9 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 Route::resource('dashboard',DashboardController::class);
+Route::resource('admin_about',AboutController::class);
+Route::resource('admin_review',ReviewController::class);
+Route::resource('admin_home',HomeController::class);
 
 
 
