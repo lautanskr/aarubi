@@ -164,14 +164,14 @@
                     </li>
                     <li class="dropdown dropdown-user">
                         <a class="nav-link dropdown-toggle link" data-toggle="dropdown">
-                            <img src="./assets/img/admin-avatar.png')}}" />
+                            <img src="{{asset('assets/img/admin-avatar.png')}}" />
                             <span></span>Admin<i class="fa fa-angle-down m-l-5"></i></a>
                         <ul class="dropdown-menu dropdown-menu-right">
                             <a class="dropdown-item" href="profile.html"><i class="fa fa-user"></i>Profile</a>
                             <a class="dropdown-item" href="profile.html"><i class="fa fa-cog"></i>Settings</a>
                             <a class="dropdown-item" href="javascript:;"><i class="fa fa-support"></i>Support</a>
                             <li class="dropdown-divider"></li>
-                            <a class="dropdown-item" href="login.html"><i class="fa fa-power-off"></i>Logout</a>
+                            <a class="dropdown-item" href="{{route('logout')}}"><i class="fa fa-power-off"></i>Logout</a>
                         </ul>
                     </li>
                 </ul>
@@ -191,7 +191,7 @@
                 </div>
                 <ul class="side-menu metismenu">
                     <li>
-                        <a class="active" href="{{route('dashboard.index')}}"><i class="sidebar-item-icon fa fa-th-large"></i>
+                        <a class="active" href="{{route('dashboard')}}"><i class="sidebar-item-icon fa fa-th-large"></i>
                             <span class="nav-label">Dashboard</span>
                         </a>
                     </li>
@@ -223,12 +223,77 @@
                         </a>
                     </li>
                     <li>
+
+                        <a class="active" href="{{route('admin_review.index')}}"><i class="sidebar-item-icon fa fa-bookmark"></i>
+                            <span class="nav-label">Review</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="active" href="{{route('logout')}}"><i class="sidebar-item-icon fa fa-bookmark"></i>
+                            <span class="nav-label">Logout</span>
+
                         <a class="active" href="{{route('admin.client.message')}}"><i class="sidebar-item-icon fa fa-bookmark"></i>
                             <span class="nav-label">Client Message</span>
+
                         </a>
                     </li>
                    
                    
+
+                   
+                    <li>
+                        <a href="javascript:;"><i class="sidebar-item-icon fa fa-file-text"></i>
+                            <span class="nav-label">Pages</span><i class="fa fa-angle-left arrow"></i></a>
+                        <ul class="nav-2-level collapse">
+                            <li>
+                                <a href="invoice.html">Invoice</a>
+                            </li>
+                            <li>
+                                <a href="profile.html">Profile</a>
+                            </li>
+                            <li>
+                                <a href="login.html">Login</a>
+                            </li>
+                            <li>
+                                <a href="register.html">Register</a>
+                            </li>
+                            <li>
+                                <a href="lockscreen.html">Lockscreen</a>
+                            </li>
+                            <li>
+                                <a href="forgot_password.html">Forgot password</a>
+                            </li>
+                            <li>
+                                <a href="error_404.html">404 error</a>
+                            </li>
+                            <li>
+                                <a href="error_500.html">500 error</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><i class="sidebar-item-icon fa fa-sitemap"></i>
+                            <span class="nav-label">Menu Levels</span><i class="fa fa-angle-left arrow"></i></a>
+                        <ul class="nav-2-level collapse">
+                            <li>
+                                <a href="javascript:;">Level 2</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <span class="nav-label">Level 2</span><i class="fa fa-angle-left arrow"></i></a>
+                                <ul class="nav-3-level collapse">
+                                    <li>
+                                        <a href="javascript:;">Level 3</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">Level 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+
                 </ul>
             </div>
         </nav>
