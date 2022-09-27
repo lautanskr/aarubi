@@ -201,7 +201,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="active" href="{{route('admin_product.index')}}"><i class="sidebar-item-icon fa fa-bookmark"></i>
+                        <a class="active" href="{{route('admin.product')}}"><i class="sidebar-item-icon fa fa-bookmark"></i>
                             <span class="nav-label">Product</span>
                         </a>
                     </li>
