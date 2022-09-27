@@ -12,6 +12,7 @@
     <link href="{{asset('assets/vendors/themify-icons/css/themify-icons.css')}}" rel="stylesheet" />
     <!-- PLUGINS STYLES-->
     <link href="{{asset('assets/vendors/jvectormap/jquery-jvectormap-2.0.3.css')}}" rel="stylesheet" />
+    <link href="{{asset('assets/vendors/DataTables/datatables.min.css')}}" rel="stylesheet" />
     <!-- THEME STYLES-->
     <link href="{{asset('assets/css/main.min.css')}}" rel="stylesheet" />
     <!-- PAGE LEVEL STYLES-->
@@ -200,7 +201,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="active" href="index.html"><i class="sidebar-item-icon fa fa-bookmark"></i>
+                        <a class="active" href="{{route('admin.product')}}"><i class="sidebar-item-icon fa fa-bookmark"></i>
                             <span class="nav-label">Product</span>
                         </a>
                     </li>
@@ -212,6 +213,11 @@
                     <li>
                         <a class="active" href="index.html"><i class="sidebar-item-icon fa fa-bookmark"></i>
                             <span class="nav-label">Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="active" href="{{route('admin.client.message')}}"><i class="sidebar-item-icon fa fa-bookmark"></i>
+                            <span class="nav-label">Client Message</span>
                         </a>
                     </li>
                    
