@@ -28,7 +28,8 @@
     <!-- Owl Carousel js -->
     <link rel="stylesheet" href="{{asset('frontend/vendor/OwlCarousel/owl.carousel.min.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/vendor/OwlCarousel/owl.theme.default.min.css')}}">
-  
+   <!-- MeanMenu CSS -->
+   <link rel="stylesheet" href="{{asset('frontend/css/meanmenu.min.css')}}">
     <!-- Slick Slider CSS -->
     <link rel="stylesheet" href="{{asset('frontend/vendor/slick/slick.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/vendor/slick/slick-theme.css')}}">
@@ -36,8 +37,7 @@
     <link rel="stylesheet" href="{{asset('frontend/css/magnific-popup.css')}}">
     <!-- Select 2 CSS -->
     <link rel="stylesheet" href="{{asset('frontend/css/select2.min.css')}}">
-    <!-- MeanMenu CSS -->
-    <link rel="stylesheet" href="{{asset('frontend/css/meanmenu.min.css')}}">
+   
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{asset('frontend/style.css')}}">
     <!-- Modernize js -->

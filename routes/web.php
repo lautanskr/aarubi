@@ -8,7 +8,6 @@ use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\AboutController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\ClientMessageController;
-use App\Http\Controllers\Admin\FrontendController;
 use App\Http\Controllers\FrontendController;
 
 

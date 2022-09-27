@@ -135,7 +135,7 @@
         </section>
         <!-- Slider Area End Here -->
          
-        
+    
       <!-- About Area Start Here -->
         <section class="about-wrap-layout5">
             <div class="container">
@@ -252,154 +252,7 @@
             </div>
         </section>
         <!-- Call To Action Area End Here -->
-        <!-- Team Area Start Here -->
-        <section class="team-wrap-layout3 bg-shape-4">
-            <div class="container">
-                <div class="heading-layout1">
-                    <div class="item-subtitle">Behind The Story</div>
-                    <h2>Expert Team Members</h2>
-                </div>
-                <div class="row gutters-15">
-                    <div class="col-lg-3 col-sm-6 col-12">
-                        <div class="team-box-layout3">
-                            <div class="item-img">
-                                <img src="{{asset('frontend/img/team/team5.png')}}" alt="Team Member">
-                            </div>
-                            <div class="item-content">
-                                <div class="item-heading">
-                                    <h3 class="item-title"><a href="single-team1.html">Steven Smith</a></h3>
-                                    <div class="item-subtitle">CEO, Rooftop</div>
-                                </div>
-                                <ul class="item-social">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 col-12">
-                        <div class="team-box-layout3">
-                            <div class="item-img">
-                                <img src="{{asset('frontend/img/team/team6.png')}}" alt="Team Member">
-                            </div>
-                            <div class="item-content">
-                                <div class="item-heading">
-                                    <h3 class="item-title"><a href="single-team1.html">Amanda Riya</a></h3>
-                                    <div class="item-subtitle">CEO, Rooftop</div>
-                                </div>
-                                <ul class="item-social">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 col-12">
-                        <div class="team-box-layout3">
-                            <div class="item-img">
-                                <img src="{{asset('frontend/img/team/team7.png')}}" alt="Team Member">
-                            </div>
-                            <div class="item-content">
-                                <div class="item-heading">
-                                    <h3 class="item-title"><a href="single-team1.html">Steven Herry</a></h3>
-                                    <div class="item-subtitle">CEO, Rooftop</div>
-                                </div>
-                                <ul class="item-social">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 col-12">
-                        <div class="team-box-layout3">
-                            <div class="item-img">
-                                <img src="{{asset('frontend/img/team/team8.png')}}" alt="Team Member">
-                            </div>
-                            <div class="item-content">
-                                <div class="item-heading">
-                                    <h3 class="item-title"><a href="single-team1.html">Megan Lanni</a></h3>
-                                    <div class="item-subtitle">CEO, Rooftop</div>
-                                </div>
-                                <ul class="item-social">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Team Area End Here -->
-        <!-- Progress Area Start Here -->
-        <section class="progress-wrap-layout2  parallax-window" data-parallax="scroll" data-image-src="{{asset('frontend/img/figure/banner-bg.jpg')}}">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="progress-box-layout1">
-                            <div class="progress-content">
-                                <div class="item-icon">
-                                    <i class="flaticon-apartment"></i>
-                                </div>
-                                <div class="item-content">
-                                    <div class="counter count-number" data-num="1050">1050</div>
-                                    <div class="count-title">Residential Projects</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="progress-box-layout1">
-                            <div class="progress-content">
-                                <div class="item-icon">
-                                    <i class="flaticon-industry"></i>
-                                </div>
-                                <div class="item-content">
-                                    <div class="counter count-number" data-num="1250">1250</div>
-                                    <div class="count-title">Commertial Projects</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="progress-box-layout1">
-                            <div class="progress-content">
-                                <div class="item-icon">
-                                    <i class="flaticon-helmet"></i>
-                                </div>
-                                <div class="item-content">
-                                    <div class="counter count-number" data-num="650">650</div>
-                                    <div class="count-title">Hard Working People</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="progress-box-layout1">
-                            <div class="progress-content">
-                                <div class="item-icon">
-                                    <i class="flaticon-happy"></i>
-                                </div>
-                                <div class="item-content">
-                                    <div class="counter count-number" data-num="3659">3659</div>
-                                    <div class="count-title">Our Satisfied Clinets</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Progress Area End Here -->
+       
         <!-- Testimonial Area Start Here -->
         <section class="testimonial-wrap-layout1 bg-aash bg-common" data-bg-image="{{asset('img/figure/bg-banner.png')}}">
             <div class="container">
@@ -524,82 +377,9 @@
             </div>
         </section>
         <!-- Testimonial Area End Here -->
-        <!-- Blog Area Start Here -->
-        <section class="blog-wrap-layout3">
-            <div class="container">
-                <div class="heading-layout1">
-                    <div class="item-subtitle">What’s New Things</div>
-                    <h2>Latest News &amp; Updates</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="blog-box-layout3">
-                            <div class="item-img">
-                               <a href="single-blog1.html"><img src="{{asset('frontend/img/blog/blog5.jpg')}}" alt="blog"></a>
-                               <div class="top-item">
-                                    <div class="item-date">
-                                        <span class="days">27</span>
-                                        <span class="month">APR</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item-content">
-                                <h3 class="item-title"><a href="single-blog1.html">Many important area brands  given search 2019</a></h3>
-                                <ul class="entry-meta">
-                                    <li>by <a href="#">Lucas Adrone</a></li>
-                                    <li>Comments: 0</li>
-                                </ul>
-                                <p>Borem ipsum dolor sit amet consec aretur adipiscing incididunt dolore.Borem ipsum dolor sit amet consec.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="blog-box-layout3">
-                            <div class="item-img">
-                               <a href="single-blog1.html"><img src="img/blog/blog6.jpg" alt="blog"></a>
-                               <div class="top-item">
-                                    <div class="item-date">
-                                        <span class="days">27</span>
-                                        <span class="month">APR</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item-content">
-                                <h3 class="item-title"><a href="single-blog1.html">Many important area brands  given search 2019</a></h3>
-                                <ul class="entry-meta">
-                                    <li>by <a href="#">Lucas Adrone</a></li>
-                                    <li>Comments: 0</li>
-                                </ul>
-                                <p>Borem ipsum dolor sit amet consec aretur adipiscing incididunt dolore.Borem ipsum dolor sit amet consec.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12 d-block d-md-none d-lg-block">
-                        <div class="blog-box-layout3">
-                            <div class="item-img">
-                               <a href="single-blog1.html"><img src="img/blog/blog7.jpg" alt="blog"></a>
-                               <div class="top-item">
-                                    <div class="item-date">
-                                        <span class="days">27</span>
-                                        <span class="month">APR</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item-content">
-                                <h3 class="item-title"><a href="single-blog1.html">Many important area brands  given search 2019</a></h3>
-                                <ul class="entry-meta">
-                                    <li>by <a href="#">Lucas Adrone</a></li>
-                                    <li>Comments: 0</li>
-                                </ul>
-                                <p>Borem ipsum dolor sit amet consec aretur adipiscing incididunt dolore.Borem ipsum dolor sit amet consec.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+       
         <!-- Blog Area End Here -->
-        <!-- Brand Area Start Here -->
+        {{-- <!-- Brand Area Start Here -->
         <section class="brand-wrap-layout2">
             <div class="container">
                 <div class="rc-carousel nav-control-layout1" data-loop="true" data-items="10" data-margin="30"
@@ -638,5 +418,5 @@
                 </div>
             </div>
         </section>
-        <!-- Brand Area End Here -->
+        <!-- Brand Area End Here --> --}}
         @include('frontend.footer');

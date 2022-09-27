@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 <div class="single-item right-item">
-                    <img src="img/about/about4.jpg" alt="About Us">
+                    <img src="{{asset('fronten/img/about/about4.jpg')}}" alt="About Us">
                 </div>
             </div>
         </section>
@@ -66,7 +66,7 @@
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="why-choose-box-layout1">
                             <div class="item-img">
-                                <img src="img/figure/why-choose.jpg" alt="why choose">
+                                <img src="{{asset('frontend/img/figure/why-choose.jpg')}}" alt="why choose">
                             </div>
                             <div class="item-content">
                                 <h3 class="item-title"> <a href="#">Innovation</a></h3>
@@ -78,7 +78,7 @@
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="why-choose-box-layout1">
                             <div class="item-img">
-                                <img src="img/figure/why-choose1.jpg" alt="why choose">
+                                <img src="{{asset('frontend/img/figure/why-choose1.jpg')}}" alt="why choose">
                             </div>
                             <div class="item-content">
                                 <h3 class="item-title"> <a href="#">Commitment to Quality</a></h3>
@@ -90,7 +90,7 @@
                     <div class="col-lg-4 col-12 d-block d-md-none d-lg-block">
                         <div class="why-choose-box-layout1">
                             <div class="item-img">
-                                <img src="img/figure/why-choose2.jpg" alt="why choose">
+                                <img src="{{asset('frontend/img/figure/why-choose2.jpg')}}" alt="why choose">
                             </div>
                             <div class="item-content">
                                 <h3 class="item-title"> <a href="#">Core Values</a></h3>
@@ -103,160 +103,10 @@
             </div>
         </section>
         <!-- Why Choose Area End Here -->
-        <!-- Progress Area Start Here -->
-        <section class="progress-wrap-layout2 parallax-window" data-parallax="scroll" data-image-src="img/figure/banner-bg.jpg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="progress-box-layout1">
-                            <div class="progress-content">
-                                <div class="item-icon">
-                                    <i class="flaticon-apartment"></i>
-                                </div>
-                                <div class="item-content">
-                                    <div class="counter count-number" data-num="1050">1050</div>
-                                    <div class="count-title">Residential Projects</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="progress-box-layout1">
-                            <div class="progress-content">
-                                <div class="item-icon">
-                                    <i class="flaticon-industry"></i>
-                                </div>
-                                <div class="item-content">
-                                    <div class="counter count-number" data-num="1250">1250</div>
-                                    <div class="count-title">Commertial Projects</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="progress-box-layout1">
-                            <div class="progress-content">
-                                <div class="item-icon">
-                                    <i class="flaticon-helmet"></i>
-                                </div>
-                                <div class="item-content">
-                                    <div class="counter count-number" data-num="650">650</div>
-                                    <div class="count-title">Hard Working People</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="progress-box-layout1">
-                            <div class="progress-content">
-                                <div class="item-icon">
-                                    <i class="flaticon-happy"></i>
-                                </div>
-                                <div class="item-content">
-                                    <div class="counter count-number" data-num="3659">3659</div>
-                                    <div class="count-title">Our Satisfied Clinets</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Progress Area End Here -->
-        <!-- Team Area Start Here -->
-        <section class="team-wrap-layout2 bg-shape-1">
-            <div class="container">
-                <div class="heading-layout1">
-                    <div class="item-subtitle">Behind The Story</div>
-                    <h2>Expert Team Members</h2>
-                </div>
-                <div class="row gutters-15">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="team-box-layout2">
-                            <div class="item-img">
-                                <img src="img/team/team5.png" alt="Team Member">
-                            </div>
-                            <div class="item-content">
-                                <div class="item-heading">
-                                    <h3 class="item-title"><a href="single-team1.html">Steven Smith</a></h3>
-                                    <div class="item-subtitle">CEO, Rooftop</div>
-                                </div>
-                                <p>Andustry's standard dummy since gallery crambled.</p>
-                                <ul class="item-social">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                    <li><a href="#"><i class="fas fa-rss"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="team-box-layout2">
-                            <div class="item-img">
-                                <img src="img/team/team6.png" alt="Team Member">
-                            </div>
-                            <div class="item-content">
-                                <div class="item-heading">
-                                    <h3 class="item-title"><a href="single-team1.html">Zinia Zara</a></h3>
-                                    <div class="item-subtitle">CEO, Rooftop</div>
-                                </div>
-                                <p>Andustry's standard dummy since gallery crambled.</p>
-                                <ul class="item-social">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                    <li><a href="#"><i class="fas fa-rss"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="team-box-layout2">
-                            <div class="item-img">
-                                <img src="img/team/team7.png" alt="Team Member">
-                            </div>
-                            <div class="item-content">
-                                <div class="item-heading">
-                                    <h3 class="item-title"><a href="single-team1.html">Steven Smith</a></h3>
-                                    <div class="item-subtitle">CEO, Rooftop</div>
-                                </div>
-                                <p>Andustry's standard dummy since gallery crambled.</p>
-                                <ul class="item-social">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                    <li><a href="#"><i class="fas fa-rss"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="team-box-layout2">
-                            <div class="item-img">
-                                <img src="img/team/team8.png" alt="Team Member">
-                            </div>
-                            <div class="item-content">
-                                <div class="item-heading">
-                                    <h3 class="item-title"><a href="single-team1.html">Amanda Cerny</a></h3>
-                                    <div class="item-subtitle">CEO, Rooftop</div>
-                                </div>
-                                <p>Andustry's standard dummy since gallery crambled.</p>
-                                <ul class="item-social">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                    <li><a href="#"><i class="fas fa-rss"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Team Area End Here -->
+      
+        
         <!-- Call To Action Area Start Here -->
-        <section class="action-wrap-layout1 bg-common" data-bg-image="img/figure/banner-shape.png">
+        <section class="action-wrap-layout1 bg-common" data-bg-image="{{asset('frontend/img/figure/banner-shape.png')}}">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-9 col-12">
