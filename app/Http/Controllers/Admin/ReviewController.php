@@ -4,10 +4,12 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\About;
 use Illuminate\Support\Facades\File;
+use App\Models\review;
 
-class AboutController extends Controller
+
+
+class ReviewController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,9 +18,10 @@ class AboutController extends Controller
      */
     public function index()
     {
-        $data=About::all();
-        return view('admin.about.index',compact('data'));
+        $data=review::all();
+        return view('admin.review.index',compact('data'));
     }
+    
 
     /**
      * Show the form for creating a new resource.
@@ -27,7 +30,7 @@ class AboutController extends Controller
      */
     public function create()
     {
-        return view('admin.about.create');
+        return view('admin.review.create');
         
     }
 
@@ -40,25 +43,27 @@ class AboutController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title'=>'required',
-            'desc'=>'required',
+            'name'=>'required',
+            'post'=>'required',
+            'msg'=>'required',
             'img'=>'required',
 
         ]);
-        $about = new About;
+        $review = new review;
         if($request->file('img')){//form name
             $file = $request->file('img');
             $filename = date('YmdHi').$file->getClientOriginalName();
-            $file->move(public_path('img/about/'),$filename);
-            $about['image']=$filename;//database name
+            $file->move(public_path('img/review/'),$filename);
+            $review['image']=$filename;//database name
         }
-        $about->title=$request->title;
-        $about->description=$request->desc;
+        $review->name=$request->name;
+        $review->post=$request->post;
+        $review->message=$request->msg;
 
-        $about->save();
+        $review->save();
 
-        return redirect()->route('admin_about.index')
-        ->with('success','about  has been created successfully');
+        return redirect()->route('admin_review.index')
+        ->with('success','review  has been created successfully');
     }
 
     /**
@@ -67,9 +72,9 @@ class AboutController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(About $about)
+    public function show(Review $review)
     {
-        return view('admin.about.show',compact('about'));
+        return view('admin.review.show',compact('review'));
         
     }
 
@@ -79,10 +84,10 @@ class AboutController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(About $about,$id)
+    public function edit(Review $review,$id)
     {
-        $about=About::find($id);
-        return view('admin.about.edit',compact('about'));
+        $review=Review::find($id);
+        return view('admin.review.edit',compact('review'));
         
     }
 
@@ -96,25 +101,27 @@ class AboutController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'title'=>'required',
-            'desc'=>'required',
+            'name'=>'required',
+            'post'=>'required',
+            'msg'=>'required',
             'img'=>'required',
 
         ]);
-        $about =  About::find($id);
+        $review =  Review::find($id);
         if($request->hasFile('img')){//form name
             $file = $request->img;
             $filename = date('YmdHi').$file->getClientOriginalName();
-            $file->move(public_path('img/about/'),$filename);
-            $about['image']=$filename;//database name
+            $file->move(public_path('img/review/'),$filename);
+            $review['image']=$filename;//database name
         }
-        $about->title=$request->title;
-        $about->description=$request->desc;
+        $review->name=$request->name;
+        $review->post=$request->post;
+        $review->message=$request->msg;
 
-        $about->save();
+        $review->save();
 
-        return redirect()->route('admin_about.index')
-        ->with('success','about has been updated successfully');
+        return redirect()->route('admin_review.index')
+        ->with('success','review has been updated successfully');
     }
 
     /**
@@ -123,18 +130,17 @@ class AboutController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(About $about,$id)
+    public function destroy(Review $review,$id)
     {
-        $about = About::findOrFail($id);
-        $image_path = public_path("img/about/{$about->image}");
+        $review = review::findOrFail($id);
+        $image_path = public_path("img/review/{$review->image}");
     
         if (File::exists($image_path)) {
             //File::delete($image_path);
             unlink($image_path);
         }
-        $about->delete();
-        return redirect()->route('admin_about.index')
-        ->with('success','about has been deleted successfully');
-
+        $review->delete();
+        return redirect()->route('admin_review.index')
+        ->with('success','review has been deleted successfully');
     }
 }

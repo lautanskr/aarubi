@@ -4,10 +4,12 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\About;
+use App\Models\Home;
 use Illuminate\Support\Facades\File;
 
-class AboutController extends Controller
+
+
+class HomeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +18,8 @@ class AboutController extends Controller
      */
     public function index()
     {
-        $data=About::all();
-        return view('admin.about.index',compact('data'));
+        $data=Home::all();
+        return view('admin.home.index',compact('data'));
     }
 
     /**
@@ -27,8 +29,7 @@ class AboutController extends Controller
      */
     public function create()
     {
-        return view('admin.about.create');
-        
+        return view('admin.home.create');
     }
 
     /**
@@ -45,20 +46,21 @@ class AboutController extends Controller
             'img'=>'required',
 
         ]);
-        $about = new About;
+        $home = new Home;
         if($request->file('img')){//form name
             $file = $request->file('img');
             $filename = date('YmdHi').$file->getClientOriginalName();
-            $file->move(public_path('img/about/'),$filename);
-            $about['image']=$filename;//database name
+            $file->move(public_path('img/home/'),$filename);
+            $home['image']=$filename;//database name
+            
         }
-        $about->title=$request->title;
-        $about->description=$request->desc;
+        $home->title=$request->title;
+        $home->description=$request->desc;
 
-        $about->save();
+        $home->save();
 
-        return redirect()->route('admin_about.index')
-        ->with('success','about  has been created successfully');
+        return redirect()->route('admin_home.index')
+        ->with('success','home  has been created successfully');
     }
 
     /**
@@ -67,10 +69,9 @@ class AboutController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(About $about)
+    public function show(Home $home)
     {
-        return view('admin.about.show',compact('about'));
-        
+        return view('admin.home.show',compact('home'));
     }
 
     /**
@@ -79,10 +80,10 @@ class AboutController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(About $about,$id)
+    public function edit($id)
     {
-        $about=About::find($id);
-        return view('admin.about.edit',compact('about'));
+        $home=Home::find($id);
+        return view('admin.home.edit',compact('home'));
         
     }
 
@@ -95,26 +96,24 @@ class AboutController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $request->validate([
-            'title'=>'required',
-            'desc'=>'required',
-            'img'=>'required',
-
-        ]);
-        $about =  About::find($id);
-        if($request->hasFile('img')){//form name
-            $file = $request->img;
-            $filename = date('YmdHi').$file->getClientOriginalName();
-            $file->move(public_path('img/about/'),$filename);
-            $about['image']=$filename;//database name
-        }
-        $about->title=$request->title;
-        $about->description=$request->desc;
-
-        $about->save();
-
-        return redirect()->route('admin_about.index')
-        ->with('success','about has been updated successfully');
+        
+    $request->validate([
+    'title' => 'required',
+    'desc' => 'required',
+    'img' => 'required',
+    ]);
+    $home = Home::find($id);
+    if($request->file('img')){//form name
+        $file = $request->file('img');
+        $filename = date('YmdHi').$file->getClientOriginalName();
+        $file->move(public_path('img/home/'),$filename);
+        $home['image']=$filename;//database name
+    }
+    $home->title = $request->title;
+    $home->description = $request->desc;
+    $home->save();
+    return redirect()->route('admin_home.index')
+    ->with('success','Home has been updated successfully');
     }
 
     /**
@@ -123,18 +122,17 @@ class AboutController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(About $about,$id)
+    public function destroy(Home $home,$id)
     {
-        $about = About::findOrFail($id);
-        $image_path = public_path("img/about/{$about->image}");
+        $home = Home::findOrFail($id);
+        $image_path = public_path("..\img\home\{$home->image}");
     
         if (File::exists($image_path)) {
             //File::delete($image_path);
             unlink($image_path);
         }
-        $about->delete();
-        return redirect()->route('admin_about.index')
+        $home->delete();
+        return redirect()->route('admin_home.index')
         ->with('success','about has been deleted successfully');
-
     }
 }

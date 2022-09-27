@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\AboutController;
+use App\Http\Controllers\Admin\ReviewController;
+use App\Http\Controllers\Admin\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +22,5 @@ Route::get('/', function () {
 });
 Route::resource('dashboard',DashboardController::class);
 Route::resource('admin_about',AboutController::class);
+Route::resource('admin_review',ReviewController::class);
+Route::resource('admin_home',HomeController::class);
