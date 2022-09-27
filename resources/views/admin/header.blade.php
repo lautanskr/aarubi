@@ -14,6 +14,7 @@
     <link href="{{asset('assets/vendors/DataTables/datatables.min.css')}}" rel="stylesheet" />
 
     <link href="{{asset('assets/vendors/jvectormap/jquery-jvectormap-2.0.3.css')}}" rel="stylesheet" />
+    <link href="{{asset('assets/vendors/DataTables/datatables.min.css')}}" rel="stylesheet" />
     <!-- THEME STYLES-->
     <link href="{{asset('assets/css/main.min.css')}}" rel="stylesheet" />
     <!-- PAGE LEVEL STYLES-->
@@ -207,7 +208,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="active" href="index.html"><i class="sidebar-item-icon fa fa-bookmark"></i>
+                        <a class="active" href="{{route('admin.product')}}"><i class="sidebar-item-icon fa fa-bookmark"></i>
                             <span class="nav-label">Product</span>
                         </a>
                     </li>
@@ -220,6 +221,63 @@
                         <a class="active" href="index.html"><i class="sidebar-item-icon fa fa-bookmark"></i>
                             <span class="nav-label">Services</span>
                         </a>
+                    </li>
+                    <li>
+                        <a class="active" href="{{route('admin.client.message')}}"><i class="sidebar-item-icon fa fa-bookmark"></i>
+                            <span class="nav-label">Client Message</span>
+                        </a>
+                    </li>
+                   
+                    {{-- <li>
+                        <a href="javascript:;"><i class="sidebar-item-icon fa fa-edit"></i>
+                            <span class="nav-label">Forms</span><i class="fa fa-angle-left arrow"></i></a>
+                        <ul class="nav-2-level collapse">
+                            <li>
+                                <a href="form_basic.html">Basic Forms</a>
+                            </li>
+                            <li>
+                                <a href="form_advanced.html">Advanced Plugins</a>
+                            </li>
+                            <li>
+                                <a href="form_masks.html">Form input masks</a>
+                            </li>
+                            <li>
+                                <a href="form_validation.html">Form Validation</a>
+                            </li>
+                            <li>
+                                <a href="text_editors.html">Text Editors</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><i class="sidebar-item-icon fa fa-table"></i>
+                            <span class="nav-label">Tables</span><i class="fa fa-angle-left arrow"></i></a>
+                        <ul class="nav-2-level collapse">
+                            <li>
+                                <a href="table_basic.html">Basic Tables</a>
+                            </li>
+                            <li>
+                                <a href="datatables.html">Datatables</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><i class="sidebar-item-icon fa fa-bar-chart"></i>
+                            <span class="nav-label">Charts</span><i class="fa fa-angle-left arrow"></i></a>
+                        <ul class="nav-2-level collapse">
+                            <li>
+                                <a href="charts_flot.html">Flot Charts</a>
+                            </li>
+                            <li>
+                                <a href="charts_morris.html">Morris Charts</a>
+                            </li>
+                            <li>
+                                <a href="chartjs.html">Chart.js</a>
+                            </li>
+                            <li>
+                                <a href="charts_sparkline.html">Sparkline Charts</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a class="active" href="{{route('admin_review.index')}}"><i class="sidebar-item-icon fa fa-bookmark"></i>
