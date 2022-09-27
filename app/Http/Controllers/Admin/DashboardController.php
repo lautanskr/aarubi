@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Review;
+use App\Models\Service;
+use App\Models\Contact;
 
 
 class DashboardController extends Controller
@@ -17,7 +19,9 @@ class DashboardController extends Controller
     public function index(Review $review)
     {
         $review=Review::get()->count();
-        return view('admin.index',compact('review'));
+        $service=Service::get()->count();
+        $contact=Contact::get()->count();
+        return view('admin.index',compact('review','service','contact'));
     }
 
     /**
