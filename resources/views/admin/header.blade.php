@@ -206,7 +206,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="active" href="index.html"><i class="sidebar-item-icon fa fa-bookmark"></i>
+                        <a class="active" href="{{route('admin_contact.index')}}"><i class="sidebar-item-icon fa fa-bookmark"></i>
                             <span class="nav-label">Contact</span>
                         </a>
                     </li>
@@ -215,6 +215,7 @@
                             <span class="nav-label">Services</span>
                         </a>
                     </li>
+                   
                    
                     {{-- <li>
                         <a href="javascript:;"><i class="sidebar-item-icon fa fa-edit"></i>

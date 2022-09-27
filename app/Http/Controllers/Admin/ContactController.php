@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Service;
+use App\Models\Contact;
 
-class ServicesController extends Controller
+class ContactController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,11 +15,10 @@ class ServicesController extends Controller
      */
     public function index()
     {
-        $data=Service::latest()->paginate(100000);
-        return view('admin.service.index',compact('data'))
+        $data=Contact::latest()->paginate(100000);
+        return view('admin.contact.index',compact('data'))
             ->with('i', (request()->input('page', 1) - 1) * 10);
-
-       
+        
     }
 
     /**
@@ -29,7 +28,7 @@ class ServicesController extends Controller
      */
     public function create()
     {
-        return view('admin.service.create');
+        return view('admin.contact.create');
     }
 
     /**
@@ -40,26 +39,23 @@ class ServicesController extends Controller
      */
     public function store(Request $request)
     {
+        
         $request->validate([
             'name' => 'required',
-            'image' => 'mimes:jpeg,jpg,png,gif|required|max:10000',
+            'email' => 'required',
+            'message'=> 'required'
         ]);
         
-        $data= new Service;
-        $data->services_name=$request->input('name');
-       
-        if($request->hasFile('image')){
-           $file=$request->image;
-            $name=$file->getClientOriginalName();
-            $filename= time().'.'.$name;
-            $file->move('Services_photo',$filename);
-            $data->image=$filename;
-        }
-        $data->description=$request->input('description');
+        $data= new Contact;
+        $data->name=$request->input('name');
+        $data->email=$request->input('email');
+        $data->address=$request->input('address');
+       $data->message=$request->input('message');
         
         
         $data->save();
-        return redirect('admin_service');
+        return redirect('admin_contact');
+  
     }
 
     /**
@@ -81,9 +77,7 @@ class ServicesController extends Controller
      */
     public function edit($id)
     {
-        $service=Service::find($id);
-        return view('admin.service.edit',compact('service'));
-
+        //
     }
 
     /**
@@ -95,21 +89,7 @@ class ServicesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $data=Service::find($id);
-        $data->services_name=$request->input('name');
-       
-        if($request->hasFile('image')){
-           $file=$request->image;
-            $name=$file->getClientOriginalName();
-            $filename= time().'.'.$name;
-            $file->move('Services_photo',$filename);
-            $data->image=$filename;
-        }
-        $data->description=$request->input('description');
-        
-        
-        $data->save();
-        return redirect('admin_service');
+        //
     }
 
     /**
@@ -120,10 +100,10 @@ class ServicesController extends Controller
      */
     public function destroy($id)
     {
-        $service=Service::findOrfail($id);
-        $service->delete();
+        $contact=Contact::findOrfail($id);
+        $contact->delete();
        
-        return redirect()->route('admin_service.index')
+        return redirect()->route('admin_contact.index')
                         ->with('success','Data deleted successfully');
     }
 }

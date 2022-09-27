@@ -13,7 +13,7 @@
     <div class="page-content fade-in-up">
         <div class="ibox">
             <div class="ibox-head">
-            <button class="btn btn-primary float-right"><a href="{{route('admin_service.create')}}"class="text-white">ADD SERVICES</a></button>
+            <button class="btn btn-primary float-right"><a href="{{route('admin_contact.create')}}"class="text-white">ADD Contact</a></button>
 
             </div>
             <div class="ibox-body">
@@ -21,35 +21,32 @@
                     <thead>
                         <tr>
                             <th>Sn</th>
-                            <th>Services Name</th>
-                            <th>Image</th>
-                            <th>Description</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            
+                            <th>Address</th>
+                            <th>Message</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach($data as $d)
-                        <tr>
-                            <td>{{++$i}}</td>
-                            <td>{{$d->services_name}}</td>
-                            <td><img src="..\Services_photo\{{$d->image}}" alt="" height="50px" width="70px"></td>
-                            <td>{{$d->description}}</td>
-                            <td>
-                            <form action="{{route('admin_service.destroy',$d->id)}}" method="POST">
-                            <a class="" href="{{route('admin_service.edit',$d->id)}}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-                           
-                           
-
+                      @foreach($data as $c)
+                      <tr>
+                        <td>{{++$i}}</td>
+                        <td>{{$c->name}}</td>
+                        <td>{{$c->email}}</td>
+                        <td>{{$c->address}}</td>
+                        <td>{{$c->message}}</td>
+                        <td>
+                        <form action="{{route('admin_contact.destroy',$c->id)}}" method="POST">
                             @csrf
                             @method('DELETE')
 
                             <button type="submit" class="btn-danger" onclick="return confirm('Areyou sure want to delete')"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
                         </form>
-                            </td>
-                        </tr>
-                        @endforeach
-                      
-                       
+                        </td>
+                      </tr>
+                      @endforeach
                        
                     </tbody>
                 </table>
