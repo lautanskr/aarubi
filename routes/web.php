@@ -6,9 +6,20 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ProductController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend/index');
 });
+
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
+
 Route::resource('dashboard',DashboardController::class);
+
+
+
 // Admin Product //
 Route::get('admin_product',[ProductController::class,'index'])->name('admin.product');
 Route::post('admin_product_store',[ProductController::class,'store'])->name('admin.product.store');
