@@ -1,237 +1,142 @@
 @include('frontend.header');
-        <!-- Header Area End Here -->
-        <!-- Slider Area Start Here -->
-        <div class="slider-area slider-layout2">
-            <div class="bend niceties preview-1">
-                <div id="ensign-nivoslider-4" class="slides">
-                    <img src="{{asset('frontend/img/slider/slide3-1.jpg')}}" alt="slider" title="#slider-direction-1" />
-                    <img src="{{asset('frontend/img/slider/slide3-2.jpg')}}" alt="slider" title="#slider-direction-2" />
-                    <img src="{{asset('frontend/img/slider/slide3-3.jpg')}}" alt="slider" title="#slider-direction-3" />
-                </div>
-                <div id="slider-direction-1" class="t-cn slider-direction">
-                    <div class="slider-content s-tb slide-1">
-                        <div class="text-left title-container s-tb-c">
-                            <div class="container">
-                                <div class="slider-big-text text-light">Expert Residential</div>
-                                <div class="slider-sub-text text-light">Roofing Constractor</div>
-                                <div class="slider-paragraph text-light">Pellentesque habitant morbi tristique senectus et netus pellente
-                                     morbi tristique senectneolitics ellentesque vestibulum. nectneolitics ellentesque vestibulum.</div>
-                                <div class="slider-btn-area">
-                                    <a href="#" class="item-btn-ghost">GET STARTED NOW
-                                        <i class="fas fa-angle-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="slider-direction-2" class="t-cn slider-direction">
-                    <div class="slider-content s-tb slide-2">
-                        <div class="text-left title-container s-tb-c">
-                            <div class="container">
-                                <div class="slider-big-text text-light">Expert Residential</div>
-                                <div class="slider-sub-text text-light">Roofing Constractor</div>
-                                <div class="slider-paragraph text-light">Pellentesque habitant morbi tristique senectus et netus pellente
-                                    morbi tristique senectneolitics ellentesque vestibulum. nectneolitics ellentesque vestibulum.</div>
-                                <div class="slider-btn-area">
-                                    <a href="#" class="item-btn-ghost">GET STARTED NOW
-                                        <i class="fas fa-angle-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="slider-direction-3" class="t-cn slider-direction">
-                    <div class="slider-content s-tb slide-3">
-                        <div class="text-left title-container s-tb-c">
-                            <div class="container">
-                                <div class="slider-big-text text-light">Expert Residential</div>
-                                <div class="slider-sub-text text-light">Roofing Constractor</div>
-                                <div class="slider-paragraph text-light">Pellentesque habitant morbi tristique senectus et netus pellente
-                                    morbi tristique senectneolitics ellentesque vestibulum. nectneolitics ellentesque vestibulum.</div>
-                                <div class="slider-btn-area">
-                                    <a href="#" class="item-btn-ghost">GET STARTED NOW
-                                        <i class="fas fa-angle-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-box-form">
-                <div class="about-box-layout3">
-                    <div class="item-heading">
-                        <h3 class="item-title">Get An Estimate</h3>
-                        <p>Need to know how much your cost?</p>
-                    </div>
-                    <form class="contact-form-box" id="contact-form-3">
-                        <div class="row">
-                            <div class="col-12 form-group">
-                                <input type="text" placeholder="Name*" class="form-control" name="name" data-error="Name field is required" required>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="col-12 form-group">
-                                <input type="email" placeholder="E-mail*" class="form-control" name="email" data-error="email field is required" required>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="col-12 form-group">
-                                <input type="text" placeholder="Phone*" class="form-control" name="phone" data-error="Phone field is required" required>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="col-12 form-group">
-                                <select class="select2" name="city">
-                                    <option value="0">City</option>
-                                    <option value="Australia">Australia</option>
-                                    <option value="England">England</option>
-                                    <option value="London">London</option>
-                                    <option value="United States">United States</option>
-                                </select>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="col-12 form-group">
-                                <select class="select2" name="subject">
-                                    <option value="0">Interested In</option>
-                                    <option value="Australia">Australia</option>
-                                    <option value="England">England</option>
-                                    <option value="London">London</option>
-                                    <option value="United States">United States</option>
-                                </select>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="col-12 form-group">
-                                <button type="submit" class="fw-btn-fill bg-Primary text-textprimary">SUBMIT NOW<i class="fas fa-chevron-right"></i></button>
-                            </div>
-                        </div>
-                        <div class="form-response"></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- Slider Area End Here -->
-        <!-- About Us Area Start Here -->
-        <section class="about-wrap-layout2 bg-shape-6">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-7 col-12">
-                        <div class="about-box-layout2">
-                            <div class="item-subtitle">Why Choose Us</div>
-                            <h2 class="item-title">The Right Choice for Quality Home Improvement for More Than 70 Years</h2>
-                            <p>Dorem ipsum dolor sit amet, consectetuer adipiscing elitwesed diam nonummconsectetuer 
-                                adipiscing euismod tinciduntrem ipsum dolor sit amet, consecteturm ipsum dolor.Dorem 
-                                ipsum dolor sit amet, consectetuer adipiscing elitwesed diam nonummconsectetuer adipiscing 
-                                euismod tinciduntrem ipsum dolor sit amet, consecteturm ipsum dolor.Dorem ipsum dolor sit amet, 
-                                consectetuer adipiscing elitwesed diam nonummer.</p>
-                            <div class="item-award">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div class="item-img">
-                                            <img src="{{asset('frontend/img/about/award.png')}}" alt="Photo">
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="item-img">
-                                            <img src="{{asset('frontend/img/about/award1.png')}}" alt="Photo">
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="item-img">
-                                            <img src="{{asset('frontend/img/about/award2.png')}}" alt="Photo">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-5 col-12 about-box-layout7">
+         <!-- Slider Area Start Here -->
+         <section class="slick-slider-wrap-layout1">
+            <div class="slick-slider-layout1">
+                <div class="slick-carousel slick-content" data-slick='{
+                    "slidesToShow": 1,
+                    "slidesToShowTab": 1,
+                    "slidesToShowMobile": 1,
+                    "slidesToShowMobiles": 1,
+                    "slidesToScroll": 1,
+                    "speed": 1000,
+                    "autoplaySpeed": 2000,
+                    "dots": false,
+                    "arrows": false,
+                    "lazyLoad": "progressive",
+                    "pauseOnHover": true,
+                    "autoplay": true,
+                    "centerMode": true,
+                    "adaptiveHeight": false,
+                    "rtl": false,
+                    "asNavFor": ".slick-nav"
+                    }'>
+                    <div class="slick-slider">
                         <div class="item-img">
-                            <img src="{{asset('frontend/img/about/about4.png')}}" alt="About Us">
+                            <img src="{{asset('frontend/img/slider/slide1-1.jpg')}}" alt="slide">
+                            <div class="item-content">
+                                <div class="big-text">Roofing Inspection</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-slider">
+                        <div class="item-img">
+                            <img src="{{asset('frontend/img/slider/slide1-2.jpg')}}" alt="slide">
+                            <div class="item-content">
+                                <div class="big-text">Roofing Siding</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-slider">
+                        <div class="item-img">
+                            <img src="{{asset('frontend/img/slider/slide1-3.jpg')}}" alt="slide">
+                            <div class="item-content">
+                                <div class="big-text">Roofing Replacement</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-slider">
+                        <div class="item-img">
+                            <img src="{{asset('frontend/img/slider/slide1-4.jpg')}}" alt="slide">
+                            <div class="item-content">
+                                <div class="big-text">Roofing Insulation</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-slider">
+                        <div class="item-img">
+                            <img src="{{asset('frontend/img/slider/slide1-5.jpg')}}" alt="slide">
+                            <div class="item-content">
+                                <div class="big-text">Roofing Gutters</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-slider">
+                        <div class="item-img">
+                            <img src="{{asset('frontend/img/slider/slide1-6.jpg')}}" alt="slide">
+                            <div class="item-content">
+                                <div class="big-text">Roofing Repair</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-nav-wrap">
+                    <div class="container">
+                        <div class="slick-carousel slick-nav" data-slick='{
+                            "slidesToShow": 6,
+                            "slidesToShowTab": 5,
+                            "slidesToShowMobile": 3,
+                            "slidesToShowMobiles": 2,
+                            "slidesToScroll": 1,
+                            "speed": 1000,
+                            "autoplaySpeed": 2000,
+                            "dots": false,
+                            "arrows": false,
+                            "lazyLoad": "progressive",
+                            "pauseOnHover": true,
+                            "autoplay": true,
+                            "focusOnSelect": true,
+                            "centerMode": false,
+                            "adaptiveHeight": false,
+                            "rtl": false,
+                            "asNavFor": ".slick-content",
+                            "prevArrow": "<span class=\"slick-prev slick-navigation\"><i class=\"flaticon-back\"></i></span>",
+                            "nextArrow": "<span class=\"slick-next slick-navigation\"><i class=\"flaticon-next\"></i></span>"
+                            }'>
+                            <div class="nav-item">
+                                <div class="item-icon">
+                                    <i class="flaticon-roof-4"></i>
+                                </div>
+                                <h4 class="item-title">Inspection</h4>
+                            </div>
+                            <div class="nav-item">
+                                <div class="item-icon">
+                                    <i class="flaticon-roof"></i>
+                                </div>
+                                <h4 class="item-title">Siding</h4>
+                            </div>
+                            <div class="nav-item">
+                                <div class="item-icon">
+                                    <i class="flaticon-roof-1"></i>
+                                </div>
+                                <h4 class="item-title">Replacement</h4>
+                            </div>
+                            <div class="nav-item">
+                                <div class="item-icon">
+                                    <i class="flaticon-roof-3"></i>
+                                </div>
+                                <h4 class="item-title">Insulation</h4>
+                            </div>
+                            <div class="nav-item">
+                                <div class="item-icon">
+                                    <i class="flaticon-roof-2"></i>
+                                </div>
+                                <h4 class="item-title">Gutters</h4>
+                            </div>
+                            <div class="nav-item">
+                                <div class="item-icon">
+                                    <i class="flaticon-broken-house"></i>
+                                </div>
+                                <h4 class="item-title">Roof Repair</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- About Us Area End Here -->
-        <!-- Service Area Start Here -->
-        <section class="service-wrap-layout4 bg-shape-5">
-            <div class="container">
-                <div class="heading-layout1 heading-light">
-                    <div class="item-subtitle">What We Do</div>
-                    <h2>Our Providing Services</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="service-box-layout4">
-                            <div class="item-img">
-                                <img src="{{asset('frontend/img/service/service8.jpg')}}" alt="service">
-                            </div>
-                            <div class="item-content">
-                                <h3 class="item-title"><a href="single-service1.html">Roof Repair</a></h3>
-                                <p>This theme does everything could are possibly only beautifully.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="service-box-layout4">
-                            <div class="item-img">
-                                <img src="{{asset('frontend/img/service/service9.jpg')}}" alt="service">
-                            </div>
-                            <div class="item-content">
-                                <h3 class="item-title"><a href="single-service1.html">Siding</a></h3>
-                                <p>This theme does everything could are possibly only beautifully.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="service-box-layout4">
-                            <div class="item-img">
-                                <img src="{{asset('frontend/img/service/service10.jpg')}}" alt="service">
-                            </div>
-                            <div class="item-content">
-                                <h3 class="item-title"><a href="single-service1.html">Insulation</a></h3>
-                                <p>This theme does everything could are possibly only beautifully.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="service-box-layout4">
-                            <div class="item-img">
-                                <img src="{{asset('frontend/img/service/service11.jpg')}}" alt="service">
-                            </div>
-                            <div class="item-content">
-                                <h3 class="item-title"><a href="single-service1.html">Gutters</a></h3>
-                                <p>This theme does everything could are possibly only beautifully.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="service-box-layout4">
-                            <div class="item-img">
-                                <img src="{{asset('frontend/img/service/service12.jpg')}}" alt="service">
-                            </div>
-                            <div class="item-content">
-                                <h3 class="item-title"><a href="single-service1.html">Replacement</a></h3>
-                                <p>This theme does everything could are possibly only beautifully.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="service-box-layout4">
-                            <div class="item-img">
-                                <img src="{{asset('frontend/img/service/service13.jpg')}}" alt="service">
-                            </div>
-                            <div class="item-content">
-                                <h3 class="item-title"><a href="single-service1.html">Inspection</a></h3>
-                                <p>This theme does everything could are possibly only beautifully.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Service Area End Here -->
-        <!-- About Area Start Here -->
+        <!-- Slider Area End Here -->
+         
+        
+      <!-- About Area Start Here -->
         <section class="about-wrap-layout5">
             <div class="container">
                 <div class="row d-flex justify-content-center">
@@ -264,7 +169,7 @@
                 </div>
             </div>
         </section>
-        <!-- About Area End Here -->
+        <!-- About Area End Here --> 
         <!-- Project Area Start Here -->
         <section class="project-wrap-layout3">
             <div class="project-box-layout3">
