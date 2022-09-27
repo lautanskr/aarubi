@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\ClientMessageController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ProductController;
@@ -15,3 +16,6 @@ Route::post('admin_product_update\{id}',[ProductController::class,'update'])->na
 Route::get('admin_product_create',[ProductController::class,'create'])->name('admin.product.create');
 Route::get('admin_product_edit\{id}',[ProductController::class,'edit'])->name('admin.product.edit');
 Route::delete('admin_product_destroy\{id}',[ProductController::class,'destroy'])->name('admin.product.destroy');
+
+// Client Message
+Route::get('admin_client_message',[ClientMessageController::class,'index'])->name('admin.client.message');

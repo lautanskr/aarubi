@@ -39,11 +39,11 @@
                                 <td>{{ $product->description }}</td>
                                 <td>
                                     <form action="{{ route('admin.product.destroy', $product->id) }}" method="POST">
-                                        <a class="" href="{{ route('admin.product.edit', $product->id) }}"><i
+                                        <a class="btn btn-primary" href="{{ route('admin.product.edit', $product->id) }}"><i
                                                 class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="btn-danger"
+                                        <button type="submit" class="btn btn-danger"
                                             onclick="return confirm('Areyou sure want to delete')"><i
                                                 class="fa fa-trash" aria-hidden="true"></i></button>
                                     </form>

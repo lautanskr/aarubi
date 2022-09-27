@@ -215,6 +215,11 @@
                             <span class="nav-label">Services</span>
                         </a>
                     </li>
+                    <li>
+                        <a class="active" href="{{route('admin.client.message')}}"><i class="sidebar-item-icon fa fa-bookmark"></i>
+                            <span class="nav-label">Client Message</span>
+                        </a>
+                    </li>
                    
                     {{-- <li>
                         <a href="javascript:;"><i class="sidebar-item-icon fa fa-edit"></i>
