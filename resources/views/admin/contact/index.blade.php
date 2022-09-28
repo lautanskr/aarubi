@@ -2,7 +2,7 @@
 <div class="content-wrapper">
     <!-- START PAGE CONTENT-->
     <div class="page-heading">
-        <h1 class="page-title">About Table</h1>
+        <h1 class="page-title">Contact Table</h1>
 
         @if ($message = Session::get('success'))
         <div class="alert alert-success">
@@ -13,7 +13,7 @@
     <div class="page-content fade-in-up">
         <div class="ibox">
             <div class="ibox-head">
-            <button class="btn btn-primary float-right"><a href="{{route('admin_contact.create')}}"class="text-white">ADD Contact</a></button>
+            <!-- <button class="btn btn-primary float-right"><a href=""class="text-white"></a></button> -->
 
             </div>
             <div class="ibox-body">
@@ -24,7 +24,7 @@
                             <th>Name</th>
                             <th>Email</th>
                             
-                            <th>Address</th>
+                            <th>Contact</th>
                             <th>Message</th>
                             <th>Action</th>
                         </tr>

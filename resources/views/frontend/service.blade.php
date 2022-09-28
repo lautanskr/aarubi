@@ -21,12 +21,13 @@
         <!-- Service Area Start Here -->
         <section class="about-wrap-layout3 overflow-hidden">
             <div class="container">
+                @foreach($service as $s)
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="about-box-layout4">
                             <div class="about-box-img">
                                 <div class="item-img">
-                                    <img src="{{asset('frontend/img/about/about1.jpg')}}" alt="service">
+                                    <img src="..\Services_photo\{{$s->image}}" alt="service">
                                 </div>
                                 <div class="sl-number">01</div>
                             </div>
@@ -35,20 +36,21 @@
                     <div class="col-lg-6">
                         <div class="about-box-layout4">
                             <div class="about-box-content">
-                                <h2 class="item-title">Damage Roof Repair</h2>
-                                <div class="item-subtitle">With More Than Half a Century of Experience And thousands of Innovative</div>
-                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet they consec tetur, adipisci velit, 
-                                    sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatemo 
-                                    qui quia dolor sit amedipisci develit.</p>
-                                <a href="#" class="ghost-btn-lg primary-border text-Primary mg-t-15">LEARN MORE<i class="fas fa-angle-right"></i></a>
+                                <h2 class="item-title">{{$s->services_name}}</h2>
+                               
+                                <p>{{$s->description}}</p>
+                                
                             </div>
                         </div>
                     </div>
+                 @endforeach  
+                 @foreach($service2 as $s2)
                     <div class="col-lg-6 order-lg-4">
                         <div class="about-box-layout5">
                             <div class="about-box-img">
                                 <div class="item-img">
-                                    <img src="{{asset('frontend/img/service/service20.jpg')}}" alt="service">
+                                    <img src="..\Services_photo\{{$s2->image}}" alt="service">
+                                    ldskjfldjf
                                 </div>
                                 <div class="sl-number">02</div>
                             </div>
@@ -57,59 +59,40 @@
                     <div class="col-lg-6 order-lg-3">
                         <div class="about-box-layout5">
                             <div class="about-box-content">
-                                <h2 class="item-title">Roof Siding</h2>
-                                <div class="item-subtitle">With More Than Half a Century of Experience And thousands of Innovative</div>
-                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet they consec tetur, adipisci velit, 
-                                    sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatemo 
-                                    qui quia dolor sit amedipisci develit.</p>
-                                <a href="#" class="ghost-btn-lg primary-border text-Primary mg-t-15">LEARN MORE<i class="fas fa-angle-right"></i></a>
+                                <h2 class="item-title">{{$s2->services_name}}</h2>
+                                
+                                <p>{{$s2->description}}</p>
+                                
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 order-lg-5">
-                        <div class="about-box-layout4">
-                            <div class="about-box-img">
-                                <div class="item-img">
-                                    <img src="img/service/service21.jpg" alt="service">
-                                </div>
-                                <div class="sl-number">03</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 order-lg-6">
-                        <div class="about-box-layout4">
-                            <div class="about-box-content">
-                                <h2 class="item-title">Roof Insulation</h2>
-                                <div class="item-subtitle">With More Than Half a Century of Experience And thousands of Innovative</div>
-                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet they consec tetur, adipisci velit, 
-                                    sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatemo 
-                                    qui quia dolor sit amedipisci develit.</p>
-                                <a href="#" class="ghost-btn-lg primary-border text-Primary mg-t-15">LEARN MORE<i class="fas fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
+               @endforeach
+
+                    @foreach($service3 as $s3)
                     <div class="col-lg-6 order-lg-8">
                         <div class="about-box-layout5">
                             <div class="about-box-img">
                                 <div class="item-img">
-                                    <img src="img/service/service22.jpg" alt="service">
+                                    <img src="..\Services_photo\{{$s3->image}}" alt="service">
                                 </div>
                                 <div class="sl-number">04</div>
                             </div>
                         </div>
                     </div>
+
+                
+
                     <div class="col-lg-6 order-lg-7">
                         <div class="about-box-layout5">
                             <div class="about-box-content">
-                                <h2 class="item-title">Roof Replacement</h2>
-                                <div class="item-subtitle">With More Than Half a Century of Experience And thousands of Innovative</div>
-                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet they consec tetur, adipisci velit, 
-                                    sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatemo 
-                                    qui quia dolor sit amedipisci develit.</p>
-                                <a href="#" class="ghost-btn-lg primary-border text-Primary mg-t-15">LEARN MORE<i class="fas fa-angle-right"></i></a>
+                                <h2 class="item-title">{{$s3->services_name}}</h2>
+                                
+                                <p>{{$s3->description}}</p>
+                               
                             </div>
                         </div>
                     </div>
+                    @endforeach
                 </div>
             </div>
         </section>
