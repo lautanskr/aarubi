@@ -33,7 +33,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Service Description</strong>
-                    <input file="text"  name="description" value="{{$service->description}}" class="form-control">
+                    <textarea file="text"  name="description" value="" class="form-control" cols="30" rows="5">{{$service->description}}</textarea>
                 </div>
             </div>
 
