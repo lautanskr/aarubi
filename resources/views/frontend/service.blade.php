@@ -98,7 +98,7 @@
         </section>
         <!-- Service Area End Here -->
         <!-- Call To Action Area Start Here -->
-        <section class="action-wrap-layout1 bg-common" data-bg-image="img/figure/banner-shape.png">
+        <section class="action-wrap-layout1 bg-common" data-bg-image="{{asset('frontend/img/figure/banner-shape.png')}}">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-9 col-12">

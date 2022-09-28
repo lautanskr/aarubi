@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
-use App\Models\review;
+use App\Models\Review;
 
 
 
@@ -18,7 +18,7 @@ class ReviewController extends Controller
      */
     public function index()
     {
-        $data=review::all();
+        $data=Review::all();
         return view('admin.review.index',compact('data'));
     }
     

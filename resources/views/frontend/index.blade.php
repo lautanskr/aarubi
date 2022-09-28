@@ -20,54 +20,18 @@
                     "rtl": false,
                     "asNavFor": ".slick-nav"
                     }'>
+                    @foreach($home as $h)
                     <div class="slick-slider">
+                       
                         <div class="item-img">
-                            <img src="{{asset('frontend/img/slider/slide1-1.jpg')}}" alt="slide">
+                            <img src="img/home/{{$h->image}}" alt="slide">
                             <div class="item-content">
                                
                             </div>
                         </div>
-                    </div>
-                    <div class="slick-slider">
-                        <div class="item-img">
-                            <img src="{{asset('frontend/img/slider/slide1-2.jpg')}}" alt="slide">
-                            <div class="item-content">
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slick-slider">
-                        <div class="item-img">
-                            <img src="{{asset('frontend/img/slider/slide1-3.jpg')}}" alt="slide">
-                            <div class="item-content">
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slick-slider">
-                        <div class="item-img">
-                            <img src="{{asset('frontend/img/slider/slide1-4.jpg')}}" alt="slide">
-                            <div class="item-content">
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slick-slider">
-                        <div class="item-img">
-                            <img src="{{asset('frontend/img/slider/slide1-5.jpg')}}" alt="slide">
-                            <div class="item-content">
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slick-slider">
-                        <div class="item-img">
-                            <img src="{{asset('frontend/img/slider/slide1-6.jpg')}}" alt="slide">
-                            <div class="item-content">
-                               
-                            </div>
-                        </div>
-                    </div>
+                       
+                    </div> 
+                    @endforeach                  
                 </div>
                 <div class="slick-nav-wrap">
                     <div class="container">
@@ -143,11 +107,12 @@
                     <div class="col-lg-11 col-12">
                         <div class="about-box-layout8">
                             <div class="item-content">
-                                <h2 class="item-title">We Have Experienced  Working People</h2>
-                                <p>Bhen an unknown printer took a galley of type and are scrambled it to make a type 
-                                    specimen book. It haeys urvived notbut also the leap electronic type setting remaining 
-                                    essentially.Bhen an unknown printer took a galley of type and are scrambled it to make 
-                                    a type specnotbut also the leap electronic.</p>
+                                <h2 class="item-title">Who are we? </h2>
+                                <p>We are the 3rd Generation Budding family businessmen. We champion the art of progress, professionalism and the promotion of the industry. Our strong support involves winning the growing direct selling profession.
+
+                                    We at Build It on offer a worry-free solution to our clients. We go that extra-mile through our systems, process and our internal orientation to ensure that product commissioning for the project is a seamless and effortless experience for our clients.
+                                    
+                                    We have always kept client service and requirement as our priority due to which our customer retention ratio is over 90% and nearly 85% of our business comes from referrals</p>
                                 <ul class="list-item">
                                     <li><i class="fas fa-check"></i>Expert &amp; Professional Engineers</li>
                                     <li><i class="fas fa-check"></i>We are Award Winning Company</li>
@@ -159,7 +124,7 @@
                             <div class="item-img">
                                 <img src="{{asset('frontend/img/about/about3.jpg')}}" alt="About">
                                 <div class="item-icon">
-                                    <a class="play-btn popup-youtube" href="https://www.youtube.com/watch?v=1iIZeIy7TqM">
+                                    <a class="play-btn popup-youtube" href="https://www.youtube.com/watch?v=fikf9QkL-Fc">
                                         <i class="flaticon-play-arrow"></i>
                                     </a>
                                 </div>
@@ -170,6 +135,36 @@
             </div>
         </section>
         <!-- About Area End Here --> 
+        <section class="about-wrap-layout3 overflow-hidden">
+            <div class="container">
+                @foreach($services as $s)
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about-box-layout4">
+                            <div class="about-box-img">
+                                <div class="item-img">
+                                    <img src="..\Services_photo\{{$s->image}}" alt="service">
+                                </div>
+                                <div class="sl-number">01</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-box-layout4">
+                            <div class="about-box-content">
+                                <h2 class="item-title">{{$s->services_name}}</h2>
+                               
+                                <p>{{$s->description}}</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                 @endforeach
+                
+
+                </div>
+            </div>
+        </section>
         <!-- Project Area Start Here -->
         <section class="project-wrap-layout3">
             <div class="project-box-layout3">
@@ -185,51 +180,23 @@
                     data-r-medium-nav="true" data-r-medium-dots="false" data-r-large="3" data-r-large-nav="true"
                     data-r-large-dots="false" data-r-extra-large="4" data-r-extra-large-nav="true"
                     data-r-extra-large-dots="false">
+                    @foreach($product as $p)
                     <div class="project-single-content">
                         <div class="item-img">
-                            <img src="img/project/project13.jpg" alt="Thumbnail">
+                            <img src="admin/product/{{$p->image}}" alt="Thumbnail">
                         </div>
                         <div class="item-content">
                             <div class="item-heading">
-                                <h3 class="item-title"><a href="single-project1.html">Commercial Roofing</a></h3>
+                                <h3 class="item-title"><a href="#">{{$p->product_name}}</a></h3>
                                 <div class="item-tag">
                                     <a href="#">Construction,</a>
                                     <a href="#">Siding</a>
                                 </div>
                             </div>
-                            <a href="single-project1.html" class="btn-fill-md bg-textprimary text-primarytext">DETAILS</a>
+                            <a href="#" class="btn-fill-md bg-textprimary text-primarytext">{{$p->description}}</a>
                         </div>
-                    </div>
-                    <div class="project-single-content">
-                        <div class="item-img">
-                            <img src="{{asset('frontend/img/project/project14.jpg')}}" alt="Thumbnail">
-                        </div>
-                        <div class="item-content">
-                            <div class="item-heading">
-                                <h3 class="item-title"><a href="single-project1.html">Residential Roofing</a></h3>
-                                <div class="item-tag">
-                                    <a href="#">Construction,</a>
-                                    <a href="#">Siding</a>
-                                </div>
-                            </div>
-                            <a href="single-project1.html" class="btn-fill-md bg-textprimary text-primarytext">DETAILS</a>
-                        </div>
-                    </div>
-                    <div class="project-single-content">
-                        <div class="item-img">
-                            <img src="{{asset('frontend/img/project/project15.jpg')}}" alt="Thumbnail">
-                        </div>
-                        <div class="item-content">
-                            <div class="item-heading">
-                                <h3 class="item-title"><a href="single-project1.html">Residential Roofing</a></h3>
-                                <div class="item-tag">
-                                    <a href="#">Construction,</a>
-                                    <a href="#">Siding</a>
-                                </div>
-                            </div>
-                            <a href="single-project1.html" class="btn-fill-md bg-textprimary text-primarytext">DETAILS</a>
-                        </div>
-                    </div>
+                    </div>  
+                    @endforeach
                 </div>
             </div>
         </section>
@@ -268,14 +235,15 @@
                 data-r-medium-nav="false" data-r-medium-dots="true" data-r-large="2" data-r-large-nav="false"
                 data-r-large-dots="true" data-r-extra-large="2" data-r-extra-large-nav="false"
                 data-r-extra-large-dots="true">
+                @foreach($review as $re)
                     <div class="testimonial-box-layout1 bg-textprimary">
                         <div class="media media-none--xs">
                             <div class="item-img">
-                                <img src="{{asset('frontendimg/figure/testimonial.jpg')}}" class="media-img-auto" alt="feedback">
+                                <img src="img/review/{{$re->image}}" class="media-img-auto" alt="feedback">
                             </div>
                             <div class="media-body">
-                                <h3 class="item-title">Mark Steven</h3>
-                                <div class="item-subtitle">Architecture</div>
+                                <h3 class="item-title">{{$re->name}}</h3>
+                                <div class="item-subtitle">{{$re->post}}</div>
                                 <ul class="item-rating">
                                     <li><i class="fas fa-star"></i></li>
                                     <li><i class="fas fa-star"></i></li>
@@ -285,94 +253,12 @@
                                 </ul>
                             </div>
                         </div>
-                        <p>“ Wimply dummy text of the printing and typesetting industry Lorem Ipsum has been 
-                            the in printing and type setting indus tryprinting and tprinting and type setting 
-                            industry ”</p>
+                        <p>{{$re->message}}</p>
                     </div>
-                    <div class="testimonial-box-layout1 bg-textprimary">
-                        <div class="media media-none--xs">
-                            <div class="item-img">
-                                <img src="{{asset('frontend/img/figure/testimonial1.jpg')}}" class="media-img-auto" alt="feedback">
-                            </div>
-                            <div class="media-body">
-                                <h3 class="item-title">Alexandrio Rojo</h3>
-                                <div class="item-subtitle">Architecture</div>
-                                <ul class="item-rating">
-                                    <li><i class="fas fa-star"></i></li>
-                                    <li><i class="fas fa-star"></i></li>
-                                    <li><i class="fas fa-star"></i></li>
-                                    <li><i class="fas fa-star"></i></li>
-                                    <li><i class="fas fa-star"></i></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <p>“ Wimply dummy text of the printing and typesetting industry Lorem Ipsum has been 
-                            the in printing and type setting indus tryprinting and tprinting and type setting 
-                            industry ”</p>
-                    </div>
-                    <div class="testimonial-box-layout1 bg-textprimary">
-                        <div class="media media-none--xs">
-                            <div class="item-img">
-                                <img src="{{asset('frontend/img/figure/testimonial.jpg')}}" class="media-img-auto" alt="feedback">
-                            </div>
-                            <div class="media-body">
-                                <h3 class="item-title">Mark Steven</h3>
-                                <div class="item-subtitle">Architecture</div>
-                                <ul class="item-rating">
-                                    <li><i class="fas fa-star"></i></li>
-                                    <li><i class="fas fa-star"></i></li>
-                                    <li><i class="fas fa-star"></i></li>
-                                    <li><i class="fas fa-star"></i></li>
-                                    <li><i class="fas fa-star"></i></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <p>“ Wimply dummy text of the printing and typesetting industry Lorem Ipsum has been 
-                            the in printing and type setting indus tryprinting and tprinting and type setting 
-                            industry ”</p>
-                    </div>
-                    <div class="testimonial-box-layout1 bg-textprimary">
-                        <div class="media media-none--xs">
-                            <div class="item-img">
-                                <img src="{{asset('frontend/img/figure/testimonial1.jpg')}}" class="media-img-auto" alt="feedback">
-                            </div>
-                            <div class="media-body">
-                                <h3 class="item-title">Alexandrio Rojo</h3>
-                                <div class="item-subtitle">Architecture</div>
-                                <ul class="item-rating">
-                                    <li><i class="fas fa-star"></i></li>
-                                    <li><i class="fas fa-star"></i></li>
-                                    <li><i class="fas fa-star"></i></li>
-                                    <li><i class="fas fa-star"></i></li>
-                                    <li><i class="fas fa-star"></i></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <p>“ Wimply dummy text of the printing and typesetting industry Lorem Ipsum has been 
-                            the in printing and type setting indus tryprinting and tprinting and type setting 
-                            industry ”</p>
-                    </div>
-                    <div class="testimonial-box-layout1 bg-textprimary">
-                        <div class="media media-none--xs">
-                            <div class="item-img">
-                                <img src="{{asset('frontend/img/figure/testimonial.jpg')}}" class="media-img-auto" alt="feedback">
-                            </div>
-                            <div class="media-body">
-                                <h3 class="item-title">Mark Steven</h3>
-                                <div class="item-subtitle">Architecture</div>
-                                <ul class="item-rating">
-                                    <li><i class="fas fa-star"></i></li>
-                                    <li><i class="fas fa-star"></i></li>
-                                    <li><i class="fas fa-star"></i></li>
-                                    <li><i class="fas fa-star"></i></li>
-                                    <li><i class="fas fa-star"></i></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <p>“ Wimply dummy text of the printing and typesetting industry Lorem Ipsum has been 
-                            the in printing and type setting indus tryprinting and tprinting and type setting 
-                            industry ”</p>
-                    </div>
+                    
+                  @endforeach  
+                
+                    
                 </div>
             </div>
         </section>

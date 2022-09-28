@@ -13,7 +13,7 @@
     <div class="page-content fade-in-up">
         <div class="ibox">
             <div class="ibox-head">
-            <button class="btn btn-primary float-right"><a href="{{route('admin_service.create')}}"class="text-white"></a></button>
+            <button class="btn btn-primary float-right"><a href="{{route('admin_service.create')}}"class="text-white">Add Services</a></button>
 
             </div>
             <div class="ibox-body">

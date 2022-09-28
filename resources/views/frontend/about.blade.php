@@ -24,12 +24,18 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-10 col-12">
                         <div class="heading-layout1">
-                            <h2>We Won The ‘Best Roofing Company’ Award 2019 &amp; Tightly 
+                            <h2>We Are The Best Roofing Company &amp; Tightly 
                                 Connected with our communities.</h2>
-                            <p> Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-                                standard dummy text ever since the when an unknown printer took a galley of type and scrambled 
-                                it to make a type specimen book. It has survived not only five centuries but also the leap into 
-                                electronic typesetting, remaining essentially unchanged. </p>
+                            <p> 
+
+                                We WOM are counted amongst the leading manufacturers, suppliers and exporters of Colour Coated Roofing Profile Sheets. We are committed to give quality items and long term of benefits to our clients in Domestic and International market.
+                                
+                                WOM Vision is to be an all inclusive presumed Engineering Metal Product Company and our goal is to make ideal use of our present day foundation, specialized aptitude past experience and information to give excellent and practical cold rolled form Products to our clients.
+                                
+                                Being the leading Roofing Sheets Supplier, our profile Sheet are made from the finest quality cold rolled steel coils which are coated with protected metallic and reinforced with multiple layers of organic coatings.
+                                
+                                Profile Sheet can be readily, bent, pressed, cut, drilled, lock seamed and stamped to suit the specific requirement without degradation in the quality of the paint.
+                                </p>
                         </div>
                     </div>
                 </div>
@@ -42,15 +48,15 @@
                 <div class="single-item left-item">
                     <div class="item-content">
                         <h2 class="item-title">Our History</h2>
-                        <p>Wesimply dummy text offer the printing and type setting industry. Lorem Ipsum has been 
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took 
-                            a galley of type and scrambled it to make a type specimen book. It has survived not 
-                            only five centuries, but also the leap into electronic type aeasetting remaining essentially 
-                            unchanged. It was popularised in the area tehcnology with the release.</p>
+                        <p>We are the 3rd Generation Budding family businessmen. We champion the art of progress, professionalism and the promotion of the industry. Our strong support involves winning the growing direct selling profession.
+
+                            We at Build It on offer a worry-free solution to our clients. We go that extra-mile through our systems, process and our internal orientation to ensure that product commissioning for the project is a seamless and effortless experience for our clients.
+                            
+                            We have always kept client service and requirement as our priority due to which our customer retention ratio is over 90% and nearly 85% of our business comes from referrals</p>
                     </div>
                 </div>
                 <div class="single-item right-item">
-                    <img src="{{asset('fronten/img/about/about4.jpg')}}" alt="About Us">
+                    <img src="{{asset('frontend/img/about/about.png')}}" alt="About Us">
                 </div>
             </div>
         </section>
@@ -72,17 +78,12 @@
                             <div class="item-content">
                                 <h3 class="item-title"> <a href="#">{{$a->title}}</a></h3>
                                 <p>{{$a->description}}</p>
-                                <img src="{{asset('frontend/img/figure/why-choose.jpg')}}" alt="why choose">
+
                             </div>
-                            <div class="item-content">
-                                <h3 class="item-title"> <a href="#">Innovation</a></h3>
-                                <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                                    It has survived not only five centuries.</p>
-                            </div>
+                            
                         </div>
                     </div>
                    
-                  
                     @endforeach
                     
                 </div>

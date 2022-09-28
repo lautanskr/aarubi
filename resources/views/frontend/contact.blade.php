@@ -24,7 +24,8 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="contact-box-layout2">
-                            <div id="googleMap" class="google-map" style="width:100%; height:480px; border-radius: 4px;"></div>
+                            <div id="googleMap" class="google-map" style="width:100%; height:480px; border-radius: 4px;">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.082750207709!2d85.31903641346506!3d27.65291138281449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb176399e93aa9%3A0xe8292d948f20bc5d!2sAarubi%20international%20pvt.ltd!5e0!3m2!1sen!2snp!4v1664357844737!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                             <div class="contact-form">
                                 <div class="heading-layout3">
                                     <h3 class="mg-b-10">Leave a Reply</h3>
@@ -73,8 +74,8 @@
                                 <div class="media-body space-md">
                                     <h4>Phone:</h4>
                                     <ul>
-                                        <li>+8123 456 788 99,</li>
-                                        <li>+8123 (456) 788 99</li>
+                                        <li>9851196070</li>
+                                        <li>9851214170</li>
                                     </ul>
                                 </div>
                             </div>
@@ -85,8 +86,8 @@
                                 <div class="media-body space-md">
                                     <h4>E-mail:</h4>
                                     <ul>
-                                        <li>info@roofing.com</li>
-                                        <li>info@roofing.com</li>
+                                        <li>aarubi.intnepal@gmail.com</li>
+                                       
                                     </ul>
                                 </div>
                             </div>
@@ -97,8 +98,8 @@
                                 <div class="media-body space-md">
                                     <h4>Location:</h4>
                                     <ul>
-                                        <li>51 Street, Newyork City, NYPD</li>
-                                        <li>18 Street, Newyork City, NYPD</li>
+                                        <li>Satdobato, Lalitpur</li>
+                                        
                                     </ul>
                                 </div>
                             </div>

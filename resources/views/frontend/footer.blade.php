@@ -11,7 +11,7 @@
                         <p>We always deliver 100% customer satisfaction and absolute quality 
                             work without any other compromis, just like we've been doing since 1982.</p>
                         <ul class="footer-social">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100085574406716"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                             <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
@@ -27,20 +27,18 @@
                         <div class="footer-menu-box">
                             <ul class="footer-menu-list">
                                 <li>
-                                    <a href="index-2.html">Home</a>
+                                    <a href="#">Home</a>
                                 </li>
                                 <li>
-                                    <a href="about1.html">About Us</a>
+                                    <a href="#">About Us</a>
                                 </li>
                                 <li>
-                                    <a href="#">Residential</a>
+                                    <a href="#">Services</a>
                                 </li>
                                 <li>
-                                    <a href="#">Commercial Roof</a>
+                                    <a href="#">Products</a>
                                 </li>
-                                <li>
-                                    <a href="#">Repairs</a>
-                                </li>
+                               
                             </ul>
                             <ul class="footer-menu-list">
                                 <li>
@@ -53,7 +51,7 @@
                                     <a href="#">Repairs Roofing </a>
                                 </li>
                                 <li>
-                                    <a href="blog1.html">Blog</a>
+                                    <a href="#">Blog</a>
                                 </li>
                             </ul>
                         </div>
@@ -85,7 +83,7 @@
         </div>
     </div>
     <div class="footer-bottom-wrap-layout1">
-        <div class="copyright">Copyright © 2019 Roofit by <a target="_blank" href="https://www.radiustheme.com/" rel="nofollow">RadiusTheme.</a> All Rights Reserved.</div>
+        <div class="copyright">Copyright © 2020 AARUBI International Pvt. Ltd.<a target="_blank"></a> All Rights Reserved.</div>
     </div>
 </footer>
 <!-- Footer Area End Here -->
