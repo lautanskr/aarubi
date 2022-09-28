@@ -1,14 +1,14 @@
 @include('frontend.header');
         <!-- Inne Page Banner Area Start Here -->
-        <section class="inner-page-banner bg-common" data-bg-image="{{asset('frontend/img/figure/breadcumb.jpg')}}">
+        <section class="inner-page-banner bg-common" data-bg-image="{{asset('frontend/img/project/project2.jpg')}}">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="breadcrumbs-area">
-                            <h1>All Projects</h1>
+                            <h1>All Products</h1>
                             <ul>
                                 <li>
-                                    <a href="index-2.html">Home</a>
+                                    <a href="{{route('home')}}">Home</a>
                                 </li>
                                 <li>Projects</li>
                             </ul>

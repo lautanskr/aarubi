@@ -1,6 +1,6 @@
-@include('frontend.header');
+@include('frontend.header')
         <!-- Inne Page Banner Area Start Here -->
-        <section class="inner-page-banner bg-common" data-bg-image="{{asset('frontend/img/project/project16.jpg')}}">
+        <section class="inner-page-banner bg-common" data-bg-image="{{asset('frontend/img/figure/pg1.jpg')}}">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -116,4 +116,4 @@
             </div>
         </section>
         <!-- Contact Page Area End Here -->
-      @include('frontend.footer');
+      @include('frontend.footer')

@@ -1,4 +1,4 @@
-@include('frontend.header');
+@include('frontend.header')
         <!-- Inne Page Banner Area Start Here -->
         <section class="inner-page-banner bg-common" data-bg-image="{{asset('frontend/img/project/project1.jpg')}}">
             <div class="container">
@@ -123,4 +123,4 @@
             </div>
         </section>
         <!-- Call To Action Area End Here -->
-        @include('frontend.footer');
+        @include('frontend.footer')

@@ -1,4 +1,4 @@
-@include('frontend.header');
+@include('frontend.header')
          <!-- Slider Area Start Here -->
          <section class="slick-slider-wrap-layout1">
             <div class="slick-slider-layout1">
@@ -24,7 +24,7 @@
                         <div class="item-img">
                             <img src="{{asset('frontend/img/slider/slide1-1.jpg')}}" alt="slide">
                             <div class="item-content">
-                                <div class="big-text">Roofing Inspection</div>
+                               
                             </div>
                         </div>
                     </div>
@@ -32,7 +32,7 @@
                         <div class="item-img">
                             <img src="{{asset('frontend/img/slider/slide1-2.jpg')}}" alt="slide">
                             <div class="item-content">
-                                <div class="big-text">Roofing Siding</div>
+                               
                             </div>
                         </div>
                     </div>
@@ -40,7 +40,7 @@
                         <div class="item-img">
                             <img src="{{asset('frontend/img/slider/slide1-3.jpg')}}" alt="slide">
                             <div class="item-content">
-                                <div class="big-text">Roofing Replacement</div>
+                               
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                         <div class="item-img">
                             <img src="{{asset('frontend/img/slider/slide1-4.jpg')}}" alt="slide">
                             <div class="item-content">
-                                <div class="big-text">Roofing Insulation</div>
+                               
                             </div>
                         </div>
                     </div>
@@ -56,7 +56,7 @@
                         <div class="item-img">
                             <img src="{{asset('frontend/img/slider/slide1-5.jpg')}}" alt="slide">
                             <div class="item-content">
-                                <div class="big-text">Roofing Gutters</div>
+                               
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                         <div class="item-img">
                             <img src="{{asset('frontend/img/slider/slide1-6.jpg')}}" alt="slide">
                             <div class="item-content">
-                                <div class="big-text">Roofing Repair</div>
+                               
                             </div>
                         </div>
                     </div>
@@ -419,4 +419,4 @@
             </div>
         </section>
         <!-- Brand Area End Here --> --}}
-        @include('frontend.footer');
+        @include('frontend.footer')
