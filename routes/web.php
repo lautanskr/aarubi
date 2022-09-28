@@ -15,6 +15,7 @@ use App\Http\Controllers\Admin\ServicesController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\ClientMessageController;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\FrontendContactController;
 
 
 Route::get('/', function () {
@@ -33,6 +34,7 @@ Route::get('/about',[FrontendController::class,'aboutus'])->name('about');
 Route::get('/services',[FrontendController::class,'services'])->name('service');
 Route::get('/products',[FrontendController::class,'products'])->name('product');
 Route::get('/contanct',[FrontendController::class,'contacts'])->name('contact');
+Route::post('/contanctstore',[FrontendContactController::class,'store'])->name('contactStore');
 
 
 

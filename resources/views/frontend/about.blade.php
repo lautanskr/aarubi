@@ -63,9 +63,15 @@
                     <h2>Why Choose Us</h2>
                 </div>
                 <div class="row">
+                    @foreach($about as $a)
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="why-choose-box-layout1">
                             <div class="item-img">
+                                <img src="..\img\about\{{$a->image}}" alt="why choose">
+                            </div>
+                            <div class="item-content">
+                                <h3 class="item-title"> <a href="#">{{$a->title}}</a></h3>
+                                <p>{{$a->description}}</p>
                                 <img src="{{asset('frontend/img/figure/why-choose.jpg')}}" alt="why choose">
                             </div>
                             <div class="item-content">
@@ -75,30 +81,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="why-choose-box-layout1">
-                            <div class="item-img">
-                                <img src="{{asset('frontend/img/figure/why-choose1.jpg')}}" alt="why choose">
-                            </div>
-                            <div class="item-content">
-                                <h3 class="item-title"> <a href="#">Commitment to Quality</a></h3>
-                                <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                                    It has survived not only five centuries.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12 d-block d-md-none d-lg-block">
-                        <div class="why-choose-box-layout1">
-                            <div class="item-img">
-                                <img src="{{asset('frontend/img/figure/why-choose2.jpg')}}" alt="why choose">
-                            </div>
-                            <div class="item-content">
-                                <h3 class="item-title"> <a href="#">Core Values</a></h3>
-                                <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                                    It has survived not only five centuries.</p>
-                            </div>
-                        </div>
-                    </div>
+                   
+                  
+                    @endforeach
+                    
                 </div>
             </div>
         </section>

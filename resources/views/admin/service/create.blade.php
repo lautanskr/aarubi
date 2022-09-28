@@ -32,7 +32,8 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Service Description</strong>
-                    <input file="text"  name="description" class="form-control">
+                    <textarea file="text"  name="description" cols="30" rows="5" class="form-control"></textarea>
+                    
                 </div>
             </div>
 

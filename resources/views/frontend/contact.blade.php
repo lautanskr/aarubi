@@ -30,27 +30,29 @@
                                     <h3 class="mg-b-10">Leave a Reply</h3>
                                     <p>when an unknown printer took a galley of  type and scrambled it to make.</p>
                                 </div>
-                                <form class="contact-form-box" id="contact-form">
+                                <form class="contact-form-box" id="contact-form" action="{{route('contactStore')}}" method="post">
+                                    @csrf
+                                    @method('post')
                                     <div class="row gutters-15">
                                         <div class="col-md-6 col-12 form-group">
                                             <input type="text" placeholder="Name *" class="form-control" name="name" data-error="Name field is required" required>
                                             <div class="help-block with-errors"></div>
+                                            <span style="color:red;">@error('name'){{$message}}@enderror</span>
                                         </div>
                                         <div class="col-md-6 col-12 form-group">
-                                            <input type="email" placeholder="E-mail *" class="form-control" name="email" data-error="email field is required" required>
+                                            <input type="email" placeholder="E-mail *" class="form-control" name="email" data-error="email field is required" >
                                             <div class="help-block with-errors"></div>
                                         </div>
-                                        <div class="col-md-6 col-12 form-group">
-                                            <input type="text" placeholder="Phone *" class="form-control" name="phone" data-error="Phone field is required" required>
+                                        <div class="col-md-12 col-12 form-group">
+                                            <input type="text" placeholder="Phone *" class="form-control" name="address" data-error="Phone field is required" >
                                             <div class="help-block with-errors"></div>
+                                            <span style="color:red;">@error('address'){{$message}}@enderror</span>
                                         </div>
-                                        <div class="col-md-6 col-12 form-group">
-                                            <input type="text" placeholder="Subject *" class="form-control" name="subject" data-error="Subject field is required" required>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
+                                        
                                         <div class="col-12 form-group">
                                             <textarea placeholder="Comments *" class="textarea form-control" name="message" id="form-message" rows="7" cols="20" 
-                                            data-error="Message field is required" required></textarea>
+                                            data-error="Message field is required" ></textarea>
+                                            <span style="color:red;">@error('message'){{$message}}@enderror</span>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                         <div class="col-12 form-group">
