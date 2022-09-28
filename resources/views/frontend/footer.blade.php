@@ -126,7 +126,8 @@
 <script src="{{asset('frontend/js/imagesloaded.pkgd.min.js')}}"></script>
  <!-- Slick Slider js -->
  <script src="{{asset('frontend/vendor/slick/slick.min.js')}}"></script>
-
+<!-- Google Map js -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtmXSwv4YmAKtcZyyad9W7D4AC08z0Rb4"></script>
 </body>
 
 
